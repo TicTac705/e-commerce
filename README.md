@@ -14,9 +14,9 @@
 При разработке проекта будет использовано:
 
 - Angular 14;
-- Laravel 8 - [репозиторий с backend](https://github.com/TicTac705/shop-backend);
+- Laravel 8 - [репозиторий](https://github.com/TicTac705/shop-backend);
 - Mongodb;
-- Vagrant.
+- Vagrant - [репозиторий](https://github.com/TicTac705/dev-box).
 
 ---
 
