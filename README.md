@@ -9,7 +9,9 @@
 - Список оформленных заказов;
 - Авторизация/Регистраиция.
 
-Дизайн проекта будет реализован на основе макета [Ecommerce Wireframe Kit](https://www.figma.com/community/file/966016571279781800).
+Дизайн проекта будет реализован на основе макета [Ecommerce Wireframe Kit](https://www.figma.com/community/file/966016571279781800).  
+
+Репозиторий с будущей версткой макета - [тут](https://github.com/TicTac705/e-commerce-markup)
 
 При разработке проекта будет использовано:
 
