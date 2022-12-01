@@ -6,6 +6,6 @@
   "urlApi": "/api/",
   "disallowedRoutes": [
     "/api/sign-in",
-    "/api/sign-up"
+    "/api/signup"
   ]
 }
