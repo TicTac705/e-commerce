@@ -1,0 +1,29 @@
+@mixin p-1 {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+@mixin p-2 {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 62px;
+}
+
+@mixin p-3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+@mixin p-4 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@mixin p-5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}

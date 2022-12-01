@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import "app/styles/mixins/container-mixin";
+@import "app/styles/mixins/media-mixin";
+
+@import "app/styles/mixins/typography/buttons";
+@import "app/styles/mixins/typography/headings";
+@import "app/styles/mixins/typography/paragraphs";
+
+@import "app/styles/forms/form";
+@import "app/styles/forms/form-field";
+@import "app/styles/forms/form-input";
+
+@import "app/styles/brand";
+@import "app/styles/buttons";
+@import "app/styles/catalog";
+@import "app/styles/category-list";
+@import "app/styles/common";
+@import "app/styles/content";
+@import "app/styles/controls";
+@import "app/styles/general-body";
+@import "app/styles/general-header";
+@import "app/styles/icons";
+@import "app/styles/main-menu";
+@import "app/styles/menu";
+@import "app/styles/mobile-main-menu";
+@import "app/styles/page";
+@import "app/styles/personal";
+@import "app/styles/product";
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #979797;
+  --container-bg-color: #E5E5E5;
+  --header-bg-color: #E5E5E5;
+  --main-menu-bg-color: #E5E5E5;
+  --border-color: #000;
+
+  --color-white: #fff;
+  --color-gray: #979797;
+  --color-gray-v2: #a9abbd;
+  --color-black: #000;
+  --color-red: #eb5757;
+
+  --catalog-category-border-color: #000;
+  --catalog-category-hover-border-color: #979797;
+
+  --layout-product-list-min-width: 264px;
+}
+
+.theme-inverse {
+  --primary-color: #fff;
+  --secondary-color: #979797;
+  --container-bg-color: #E5E5E5;
+  --header-bg-color: #0D0D0D;
+  --main-menu-bg-color: #0D0D0D;
+  --border-color: #fff;
+}

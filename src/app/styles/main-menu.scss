@@ -1,0 +1,27 @@
+.main-menu {
+  @include p-5;
+  gap: 32px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--main-menu-bg-color);
+
+    &:hover, &--active {
+      color: var(--secondary-color);
+      border-bottom: 1px solid var(--secondary-color);
+      transition: border-bottom 0.3s linear;
+    }
+  }
+
+  @include mobile {
+    display: none !important;
+  }
+}
+
+

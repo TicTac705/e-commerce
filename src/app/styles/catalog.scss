@@ -1,0 +1,30 @@
+.catalog {
+  display: flex;
+  gap: 12px;
+  box-sizing: border-box;
+
+  &__categories {
+    @include mobile {
+      display: none !important;
+    }
+  }
+}
+
+.categories {
+  display: flex; // или гридами, тогда две строки вместо трёх
+  flex-direction: column;
+  gap: 12px;
+
+  &__header {
+    @include h-4;
+    margin: 0;
+  }
+
+  &__category-list {
+  }
+}
+
+//элемент без блока, неверно
+.catalog__products {
+  width: 100%; // это лишнее, блок уже занимает всё доступное пространство
+}

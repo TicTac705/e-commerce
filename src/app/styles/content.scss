@@ -1,0 +1,6 @@
+.content {
+  &__container {
+    @include container;
+    padding-top: 16px;
+  }
+}

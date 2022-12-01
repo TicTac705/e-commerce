@@ -1,0 +1,11 @@
+{
+  "companyName": "E-Commerce",
+  "allowedDomains": [
+    "shop.local"
+  ],
+  "urlApi": "/api/",
+  "disallowedRoutes": [
+    "/api/sign-in",
+    "/api/sign-up"
+  ]
+}

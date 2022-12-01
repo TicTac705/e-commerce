@@ -1,0 +1,61 @@
+<div class="form-container">
+  <div class="form-body">
+    <h2 class="form-body__header">{{"Form.SignUp.Title" | translate}}</h2>
+    <form
+      class="form-body__content"
+      [formGroup]="form"
+      (ngSubmit)="signUp()"
+    >
+      <app-form-field>
+        <input
+          type="text"
+          class="form-input"
+          placeholder="{{'Form.SignUp.Fields.Name' | translate}}"
+          [ngClass]="{'is-invalid': name?.invalid && (name?.touched || name?.dirty)}"
+          formControlName="name"
+        >
+      </app-form-field>
+
+      <app-form-field>
+        <input
+          type="email"
+          class="form-input"
+          placeholder="{{'Form.SignUp.Fields.Email' | translate}}"
+          [ngClass]="{'is-invalid': email?.invalid && (email?.touched || email?.dirty)}"
+          formControlName="email"
+        >
+      </app-form-field>
+
+      <app-form-field>
+        <input
+          type="password"
+          class="form-input"
+          placeholder="{{'Form.SignUp.Fields.Password' | translate}}"
+          [ngClass]="{'is-invalid': password?.invalid && (password?.touched || password?.dirty)}"
+          formControlName="password"
+        >
+      </app-form-field>
+
+      <app-form-field>
+        <input
+          type="password"
+          class="form-input"
+          placeholder="{{'Form.SignUp.Fields.PasswordConfirm' | translate}}"
+          [ngClass]="{'is-invalid': passwordConfirm?.invalid && (passwordConfirm?.touched || passwordConfirm?.dirty)}"
+          formControlName="passwordConfirm"
+        >
+      </app-form-field>
+
+      <button
+        class="btn btn--secondary"
+        type="submit"
+        [disabled]="disabledSubmit"
+      >
+        {{'Form.SignUp.Fields.Submit' | translate}}
+      </button>
+    </form>
+  </div>
+  <div class="form-footer">
+    <a routerLink="/sign-in" class="form-footer__link">{{'Form.SignUp.Auth' | translate}}</a>
+  </div>
+</div>

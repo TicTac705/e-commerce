@@ -1,0 +1,31 @@
+.personal {
+  display: flex;
+  gap: 20px;
+  @include p-5;
+
+  &__cart {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+
+    &:hover, &--active {
+      color: var(--secondary-color);
+    }
+  }
+
+  &__action {
+    // Этот способ выравнивания текста по вертикали, я думаю, не очень хороший
+    // Но другого способа пока не нашел
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    @include p-5;
+    color: var(--primary-color);
+
+    &:hover, &--active {
+      color: var(--secondary-color);
+    }
+  }
+}

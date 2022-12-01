@@ -1,0 +1,17 @@
+@mixin button-large {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin button-big {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@mixin button-small {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}

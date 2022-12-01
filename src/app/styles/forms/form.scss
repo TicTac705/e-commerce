@@ -1,0 +1,40 @@
+.form-container {
+  max-width: 460px;
+  margin: 100px auto 0;
+}
+
+.form-body {
+  background-color: var(--color-white);
+  padding: 30px;
+
+  &__header {
+    @include h-4;
+    margin: 0;
+  }
+
+  &__desc {
+    @include p-5;
+    color: var(--color-gray-v2);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.form-footer {
+  padding-top: 30px;
+  text-align: center;
+
+  &__link {
+    font-weight: 700;
+    color: var(--color-gray-v2);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

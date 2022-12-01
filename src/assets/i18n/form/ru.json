@@ -1,0 +1,33 @@
+{
+  "Form": {
+    "SignIn": {
+      "Title": "Авторизация",
+      "Description": "Войти с электронной почтой",
+      "Fields": {
+        "Email": "Email",
+        "Password": "Пароль",
+        "Submit": "Авторизоваться"
+      },
+      "CreateAccount": "Создать новый аккаунт"
+    },
+    "SignUp": {
+      "Title": "Регистрация",
+      "Fields": {
+        "Name": "Ваше имя",
+        "Email": "Email",
+        "Password": "Пароль",
+        "PasswordConfirm": "Повторите пароль",
+        "Submit": "Зарегистрироваться"
+      },
+      "Auth": "Авторизоваться"
+    },
+    "Validate": {
+      "Required": "Поле обязательное для заполнения",
+      "Email": "Поле не соответствует адресу почты",
+      "Minlength": "Поле должно содержать {{number}} символов или более",
+      "ConfirmedValidator": {
+        "password": "Пароль не совпадает"
+      }
+    }
+  }
+}

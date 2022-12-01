@@ -1,0 +1,38 @@
+.category-list {
+  display: grid;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @include p-5;
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    color: var(--primary-color);
+    border: 1px solid var(--catalog-category-border-color);
+
+    .link__text {
+      display: block;
+      max-width: 180px; // это плохо, по сути flex: 1 1 auto уже растянется на всю доступную ширину, ты хардкодишь размер там где не нужно
+      @include ellipsis;
+    }
+
+    .link__badge {
+      margin-left: auto;
+    }
+
+    &:hover,
+    &--active {
+      color: var(--secondary-color);
+      border: 1px solid var(--catalog-category-hover-border-color);
+      @include transition(border 0.2s, color 0.2s);
+    }
+  }
+}

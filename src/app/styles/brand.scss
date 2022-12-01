@@ -1,0 +1,11 @@
+.brand {
+  font-style: normal;
+  @include h-4;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}

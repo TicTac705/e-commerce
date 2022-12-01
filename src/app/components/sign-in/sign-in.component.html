@@ -1,0 +1,42 @@
+<div class="form-container">
+  <div class="form-body">
+    <h2 class="form-body__header">{{"Form.SignIn.Title" | translate}}</h2>
+    <div class="form-body__desc">{{"Form.SignIn.Description" | translate}}</div>
+    <form
+      class="form-body__content"
+      [formGroup]="form"
+      (ngSubmit)="signIn()"
+    >
+      <app-form-field>
+        <input
+          type="email"
+          class="form-input"
+          placeholder="{{'Form.SignIn.Fields.Email' | translate}}"
+          [ngClass]="{'is-invalid': email?.invalid && (email?.touched || email?.dirty)}"
+          formControlName="email"
+        >
+      </app-form-field>
+
+      <app-form-field>
+        <input
+          type="password"
+          class="form-input"
+          placeholder="{{'Form.SignIn.Fields.Password' | translate}}"
+          [ngClass]="{'is-invalid': password?.invalid && (password?.touched || password?.dirty)}"
+          formControlName="password"
+        >
+      </app-form-field>
+
+      <button
+        class="btn btn--secondary"
+        type="submit"
+        [disabled]="disabledSubmit"
+      >
+        {{'Form.SignIn.Fields.Submit' | translate}}
+      </button>
+    </form>
+  </div>
+  <div class="form-footer">
+    <a routerLink="/sign-up" class="form-footer__link">{{'Form.SignIn.CreateAccount' | translate}}</a>
+  </div>
+</div>

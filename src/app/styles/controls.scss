@@ -1,0 +1,13 @@
+.controls {
+  display: flex;
+  align-items: center;
+
+  &__action {
+    display: flex;
+    gap: 4px;
+  }
+
+  &__sorting {
+    margin-left: auto;
+  }
+}

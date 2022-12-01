@@ -1,0 +1,26 @@
+.general-header {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--header-bg-color);
+
+  &__container {
+    @include container;
+    display: flex;
+  }
+
+  &__common {
+    display: flex;
+
+    @include mobile {
+      gap: 20px;
+    }
+
+    @include desktop {
+      gap: 32px;
+    }
+  }
+
+  &__personal {
+    margin-left: auto;
+  }
+}

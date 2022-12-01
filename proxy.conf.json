@@ -1,0 +1,8 @@
+{
+  "/api/*": {
+    "target": "http://shop.local",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}

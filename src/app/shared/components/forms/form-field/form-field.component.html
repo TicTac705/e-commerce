@@ -1,0 +1,16 @@
+<div class="form-field">
+  <ng-content></ng-content>
+  <div
+    *ngIf="showErrors"
+    class="form-field__errors"
+  >
+    <span *ngIf="control?.errors?.['required']">{{"Form.Validate.Required" | translate}}</span>
+    <span *ngIf="control?.errors?.['email']">{{"Form.Validate.Email" | translate}}</span>
+    <span *ngIf="control?.errors?.['confirmedValidator']">
+      {{"Form.Validate.ConfirmedValidator." + control?.errors?.['confirmedValidator']?.['controlName'] | translate}}
+    </span>
+    <span *ngIf="control?.errors?.['minlength']">
+      {{ "Form.Validate.Minlength" | translate:{number: control?.errors?.['minlength']?.['requiredLength']} }}
+    </span>
+  </div>
+</div>

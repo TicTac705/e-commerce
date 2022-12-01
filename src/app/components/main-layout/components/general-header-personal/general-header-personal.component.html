@@ -1,0 +1,22 @@
+<ng-container *ngIf="!authService.isAuth(); else authBlock">
+  <a routerLink="/sign-in"
+     class="personal__action"
+     routerLinkActive="personal__action--active"
+  >
+    {{ 'Header.Action.SignIn' | translate }}
+  </a>
+  <a routerLink="/sign-up"
+     class="personal__action"
+     routerLinkActive="personal__action--active"
+  >
+    {{ 'Header.Action.SignUp' | translate }}
+  </a>
+</ng-container>
+
+<ng-template #authBlock>
+  <a routerLink="/" class="personal__cart">
+    <i class="icon-cart"></i>
+    <span class="cart__badge">0</span>
+  </a>
+  <button (click)="logout()" class="btn personal__action">{{ 'Header.Action.Logout' | translate }}</button>
+</ng-template>

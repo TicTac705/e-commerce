@@ -1,0 +1,21 @@
+<div class="general-header__common common">
+  <div class="common__mobile-main-menu mobile-main-menu">
+    <i class="icon-bars"></i>
+  </div>
+  <a routerLink="/" class="common__brand brand">{{companyName}}</a>
+  <ul
+    class="common__main-menu menu main-menu"
+    *ngIf="menuItems"
+  >
+    <ng-container *ngFor="let item of menuItems">
+      <li class="main-menu__item" *ngIf="!item.hide">
+        <a
+          class="main-menu__link"
+          [routerLink]="item.link"
+          [routerLinkActiveOptions]="{exact: item.exact}"
+          routerLinkActive="main-menu__link--active"
+        >{{item.i18n | translate}}</a>
+      </li>
+    </ng-container>
+  </ul>
+</div>
